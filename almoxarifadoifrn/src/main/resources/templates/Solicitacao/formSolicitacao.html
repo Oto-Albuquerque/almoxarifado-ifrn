@@ -1,0 +1,47 @@
+!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<title>Cadastro de Solicitação</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+		<link rel="stylesheet" href="style/styleCss.css"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Solicitação</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="/listaemprestimo" class="waves-effect waves-light btn"><i class="material-icons left">storage</i>LISTA DE EMPRÉSTIMOS</a></li>
+						<li><a href="/" class="waves-effect waves-light btn"><i class="material-icons left">home</i>INÍCIO</a></li>
+					</ul>
+			</div>
+		</nav>
+	</header>
+	
+		<div class="container formEmprestimo">
+		<form class="container" method="post">
+		<select name="usuario.matricula">
+		<option th:each="usuario : ${usuario}" th:value="${usuario.matricula}"><span th:text="${usuario.nome}"></span></option>
+		</select>
+		
+		<select  name="matricula.codigo">
+		<option  th:each="material : ${material}" th:value="${material.codigo}"><span th:text="${material.titulo}"></span></option>
+		</select>
+		
+		<div class="mv"><button class="waves-effect waves-light btn" type="submit"><i class="material-icons left">import_export</i>Cadastrar</button>  <h5> <th:block th:include="mensagemValidacao"></th:block> </h5> </div>
+	
+		</form>
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+		<script>
+		$(document).ready(function(){ 
+				$('select').formSelect();
+		});
+		</script>
+	</body>
+</html>

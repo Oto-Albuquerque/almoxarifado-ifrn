@@ -1,0 +1,57 @@
+h3{
+	color:black;
+}
+
+body{
+	background-color:white;
+}
+
+.container{
+	color:black;
+}
+.mv{
+	color: red;
+	padding-top: 10px;
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding-bottom: 10px;
+}
+.logo{
+	background-image: url(https://cdn.pixabay.com/photo/2014/04/02/14/11/book-306459_960_720.png);
+	padding:250px;
+	margin-top: 50px;
+}
+.formEmprestimo{
+	color: #9e7710;
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+	margin-bottom: 70px;
+}
+.formAluno{
+	backgrond-color: blue;
+	color: #9e7710;
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+	margin-bottom: 70px;
+}
+.formLivro{
+	background-color: ;
+	color: #9e7710;
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 70px;
+}
+.addConvidado{
+	box-shadow: 0px 0px 5px grey;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 60px;
+}
